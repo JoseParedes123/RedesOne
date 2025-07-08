@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        #galeria {
+            display: grid;
+           
+            grid-template-columns: repeat(4, minmax(250px, 1fr));
+            gap: 20px; 
+            padding: 20px;
+            max-width: 1200px; 
+            margin: 20px auto; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .Imagen {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out; 
+        }
+
+        .Imagen:hover {
+            transform: scale(1.03);
+        }
+
+        .Imagen img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            display: block; 
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .alumno h2 {
+            margin-bottom: 5px;
+        }
+
+        .alumno p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi galeria de imagenes con grid.</h1>
+        <p>Esta va a ser una galeria sobre algunos monstruos del anime One Punch Man.</p>
+    </header>
+    <main>
+
+        <section id="galeria">
+            <div class="Imagen">
+                <img src="https://preview.redd.it/since-we-got-rovers-visual-i-colored-his-manga-debut-v0-uofztvtd3sye1.png?width=640&crop=smart&auto=webp&s=7099275000629c027703fb641ab021c6ce6863ec" alt="rover">
+                <h2>Overgrown Rover</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://i.pinimg.com/736x/bb/ed/50/bbed5062afacc3b53ad8e8ec132a44be.jpg" alt="garou">
+                <h2>Garou Monstruo</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://i.redd.it/iuq5cu9pkl991.jpg" alt="phoenix man">
+                <h2>Hombre Fenix</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://preview.redd.it/i18ev98mdyw51.jpg?width=1080&crop=smart&auto=webp&s=afd445070b25361976bf005d04e0421240e50dd0" alt="homeless emperor">
+                <h2>Emperador Vagabundo</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8s8tOS1RbEzRFOwcE18cQf6E9GbUMwhQMaQ&s" alt="Black sperm">
+                <h2>Black Sperm(modo Platinum)</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivZutN2v7Lic_yLfof0oBkYPlapfomu78nQ&s" alt="boros">
+                <h2>Boros</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://img.wattpad.com/fa9e5bab93934cfcf3b5d1c485fdf921fa8f50c9/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f46784f46306d7a655858796b65513d3d2d313034383439353031382e313639623432363839636633623939613633323032303634333537342e6a7067" alt="rey del mar profundo">
+                <h2>Rey del Mar Profundo</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP16mr8wEcA83oguHJOl1wpgFjNMpK74ouGQ&s" alt="Psykorochi">
+                <h2>Psykos-orochi</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdpAr94Gg6e2jJPMpLa_rePTXAA21B4vFvsGVI1ivTE3ItnyQMjwI44m4_xc9wCdwSfEc&usqp=CAU" alt="evil ocean water">
+                <h2>Evil Ocean Water</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://i.pinimg.com/564x/6e/84/84/6e848464552218b8b972715bc0e6d6fd.jpg" alt="Void">
+                <h2>Void</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://www.drakonball.com/wp-content/uploads/2022/09/cienpies-sabio.jpg" alt="Ciempies Ermitaño">
+                <h2>Ciempies Ermitaño</h2>
+            </div>
+            <div class="Imagen">
+                <img src="https://i.pinimg.com/736x/d8/d5/2d/d8d52d95f40216acc49bcbb1a9794db6.jpg" alt="Chica Mosquito">
+                <h2>Chica Mosquito</h2>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section class="alumno">
+            <h2>Alumno</h2>
+            <p>Jose Paredes</p>
+            <p>Curso: 5°3</p>
+            <p>josehpjoestar@gmail.com</p>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>
