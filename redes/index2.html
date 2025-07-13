@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="https://avatars.githubusercontent.com/u/6693385?s=280&v=4">
+    <title>Joseph_Redes</title>
+</head>
+<body>
+    <header>
+        <h1>¡Empecemos con la practica!</h1>
+        <button id="toggle-dark">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <div id="quiz1">
+            <h2>Quiz de Conocimientos sobre el Imperio Bizantino</h2>
+            <div class="question">
+                <p>¿Como se llamaba la capital del Imperio Bizantino?</p>
+                <input type="radio" id="paris" name="q1" value="paris">
+                <label for="paris">París</label><br>
+                <input type="radio" id="roma" name="q1" value="roma">
+                <label for="roma">Roma</label><br>
+                <input type="radio" id="Constantinopla" name="q1" value="Constantinopla">
+                <label for="Constantinopla">Constantinopla</label><br>
+                <input type="radio" id="londres" name="q1" value="londres">
+                <label for="londres">Londres</label><br>
+                <input type="radio" id="estambul" name="q1" value="estambul">
+                <label for="estambul">Estambul</label><br>
+                <button onclick="checkAnswer()">Enviar Respuesta</button>
+                <p id="feedback"></p>
+
+            </div>
+            <div class="question1">
+                <p>¿Cuál Imperio causo la caida de Constantinopla en 1453?</p>
+                <input type="radio" id="Español" name="q2" value="Español">
+                <label for="Español">Español</label><br>
+                <input type="radio" id="Romano" name="q2" value="Romano">
+                <label for="Romano">Romano</label><br>
+                <input type="radio" id="Otomano" name="q2" value="Otomano">
+                <label for="Otomano">Otomano</label><br>
+                <input type="radio" id="Britanico" name="q2" value="Britanico">
+                <label for="Britanico">Britanico</label><br>
+                <input type="radio" id="RomanoGermanico" name="q2" value="RomanoGermanico">
+                <label for="RomanoGermanico">Sacro Romano Germanico</label><br>
+                <button onclick="checkAnswer2()">Enviar Respuesta</button>
+                <p id="feedback2"></p>
+            </div>        
+            <div class="question2">
+                <p>¿Qué emperador bizantino es conocido por su ambicioso programa de reformas y por la construcción de la iglesia de Santa Sofía?</p>
+                <input type="radio" id="Justinian0" name="q3" value="Justiniano">
+                <label for="Justiniano">Justiniano</label><br>
+                <input type="radio" id="Constantino" name="q3" value="Constantino">
+                <label for="Constantino">Constantino</label><br>
+                <input type="radio" id="Teodosio" name="q3" value="Teodosio">
+                <label for="Teodosio">Teodosio</label><br>
+                <input type="radio" id="Heraclio" name="q3" value="Heraclio">
+                <label for="Heraclio">Heraclio</label><br>
+                <input type="radio" id="Basilio" name="q3" value="Basilio">
+                <label for="Basilio">Basilio</label><br>
+                <button onclick="checkAnswer3()">Enviar Respuesta</button>
+                <p id="feedback3"></p>
+            </div>
+            <div class="question3">
+                <p>¿Qué lengua se convirtió en la lengua oficial del Imperio Bizantino, reemplazando al latín?</p>
+                <input type="radio" id="Griego" name="q4" value="Griego">
+                <label for="Griego">Griego</label><br>
+                <input type="radio" id="Latín" name="q4" value="Latín">
+                <label for="Latín">Latín</label><br>
+                <input type="radio" id="Arabe" name="q4" value="Arabe">
+                <label for="Arabe">Árabe</label><br>
+                <input type="radio" id="Turco" name="q4" value="Turco">
+                <label for="Turco">Turco</label><br>
+                <input type="radio" id="Persa" name="q4" value="Persa">
+                <label for="Persa">Persa</label><br>
+                <button onclick="checkAnswer4()">Enviar Respuesta</button>
+                <p id="feedback4"></p>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="button-container">
+            <button onclick="location.href='index3.html'">Ir a a la siguiente historia</button>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+
+</body>
+</html>
