@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="https://cdn-icons-png.flaticon.com/512/616/616554.png">
+    <title>Quiz Astronomía Estelar</title>
+</head>
+<body>
+    <header>
+        <h1>¡Empecemos con la práctica de Astronomía!</h1>
+        <button id="toggle-dark">Modo Oscuro</button>
+    </header>
+    <main>
+        <div class="quiz1">
+            <h2>Quiz de Conocimientos sobre Astronomía Estelar</h2>
+            <div class="question4">
+                <p>¿Cuál es la estrella más cercana a la Tierra?(Fuera del Sistema Solar).</p>
+                <input type="radio" id="proxima" name="q5" value="Proxima Centauri">
+                <label for="proxima">Proxima Centauri</label><br>
+                <input type="radio" id="sol" name="q5" value="Sol">
+                <label for="sol">El Sol</label><br>
+                <input type="radio" id="sirius" name="q5" value="Sirius">
+                <label for="sirius">Sirius</label><br>
+                <input type="radio" id="betelgeuse" name="q5" value="Betelgeuse">
+                <label for="betelgeuse">Betelgeuse</label><br>
+                <input type="radio" id="uy" name="q5" value="UY Scuti">
+                <label for="uy">UY Scuti</label><br>
+                <button onclick="checkAnswer5()">Enviar Respuesta</button>
+                <p id="feedback5"></p>
+            </div>
+            <div class="question5">
+                <p>¿Cómo se llama nuestra galaxia?</p>
+                <input type="radio" id="andromeda" name="q6" value="Andrómeda">
+                <label for="andromeda">Andrómeda</label><br>
+                <input type="radio" id="via" name="q6" value="Vía Láctea">
+                <label for="via">Vía Láctea</label><br>
+                <input type="radio" id="triangulum" name="q6" value="Triangulum">
+                <label for="triangulum">Triangulum</label><br>
+                <input type="radio" id="sombrero" name="q6" value="Sombrero">
+                <label for="sombrero">Sombrero</label><br>
+                <input type="radio" id="magallanes" name="q6" value="Nube de Magallanes">
+                <label for="magallanes">Nube de Magallanes</label><br>
+                <button onclick="checkAnswer6()">Enviar Respuesta</button>
+                <p id="feedback6"></p>
+            </div>        
+            <div class="question6">
+                <p>¿Qué fenómeno ocurre cuando una estrella masiva explota al final de su vida?</p>
+                <input type="radio" id="eclipse" name="q7" value="Eclipse">
+                <label for="eclipse">Eclipse</label><br>
+                <input type="radio" id="supernova" name="q7" value="Supernova">
+                <label for="supernova">Supernova</label><br>
+                <input type="radio" id="aurora" name="q7" value="Aurora">
+                <label for="aurora">Aurora</label><br>
+                <input type="radio" id="transito" name="q7" value="Tránsito planetario">
+                <label for="transito">Tránsito planetario</label><br>
+                <input type="radio" id="lluvia" name="q7" value="Lluvia de meteoros">
+                <label for="lluvia">Lluvia de meteoros</label><br>
+                <button onclick="checkAnswer7()">Enviar Respuesta</button>
+                <p id="feedback7"></p>
+            </div>
+            <div class="question7">
+                <p>¿Cuál es el nombre del agujero negro supermasivo en el centro de la Vía Láctea?</p>
+                <input type="radio" id="sagitario" name="q8" value="Sagitario A">
+                <label for="sagitario A">Sagitario A</label><br>
+                <input type="radio" id="andromedaBH" name="q8" value="Andrómeda A">
+                <label for="andromedaBH">Andrómeda A</label><br>
+                <input type="radio" id="cygnus" name="q8" value="Cygnus X-1">
+                <label for="cygnus">Cygnus X-1</label><br>
+                <input type="radio" id="betelgeuseBH" name="q8" value="Betelgeuse">
+                <label for="betelgeuseBH">Betelgeuse</label><br>
+                <input type="radio" id="proximaBH" name="q8" value="Proxima Centauri">
+                <label for="proximaBH">Proxima Centauri</label><br>
+                <button onclick="checkAnswer8()">Enviar Respuesta</button>
+                <p id="feedback8"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="button-container">
+            <button onclick="location.href='index5.html'">Siguiente historia</button>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>

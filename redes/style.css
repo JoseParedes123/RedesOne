@@ -33,7 +33,7 @@ footer{
     color: #ffffff;
     text-align: center;
 }
-#quiz1 {
+.quiz1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,9 +62,9 @@ footer{
 .question2 button,
 .question3 button,
 .question p[id^="feedback"],
-.question1 p[id^="feedback"],
-.question2 p[id^="feedback"],
-.question3 p[id^="feedback"]{
+.question1 p[id^="feedback2"],
+.question2 p[id^="feedback3"],
+.question3 p[id^="feedback4"]{
     align-self: center;
 }
 header{
@@ -98,6 +98,22 @@ header{
     background: #1e1e1e;
     color: #ffffff;
 }
+.dark-mode .question button,
+.dark-mode .question1 button,
+.dark-mode .question2 button,
+.dark-mode .question3 button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dark-mode .question button:hover,
+.dark-mode .question1 button:hover,
+.dark-mode .question2 button:hover,
+.dark-mode .question3 button:hover {
+    background-color: #0056b3;
+}
 .dark-mode header {
     background-color: #1e1e1e;
     color: #ffffff;
@@ -114,4 +130,210 @@ header{
 .dark-mode .Historia {
     background-color: #1e1e1e;
     color: #ffffff;
+}
+/* Index3,index4 */
+li{
+    list-style: none;
+    margin: 10px 0;
+}
+.Astronomia{
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1400px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.dark-mode .Astronomia {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.question4, .question5, .question6, .question7 {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    background: #fff;
+    padding: 18px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Centra los botones y feedback */
+.question4 button,
+.question5 button,
+.question6 button,
+.question7 button,
+.question4 p[id^="feedback5"],
+.question5 p[id^="feedback6"],
+.question6 p[id^="feedback7"],
+.question7 p[id^="feedback8"]{
+    align-self: center;
+}
+.dark-mode .question4,
+.dark-mode .question5,
+.dark-mode .question6,
+.dark-mode .question7 {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+.dark-mode .question4 p[id^="feedback5"],
+.dark-mode .question5 p[id^="feedback6"],
+.dark-mode .question6 p[id^="feedback7"],
+.dark-mode .question7 p[id^="feedback8"] {
+    color: #ffffff;
+}
+.dark-mode .question4 button,
+.dark-mode .question5 button,
+.dark-mode .question6 button,
+.dark-mode .question7 button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dark-mode .question4 button:hover,
+.dark-mode .question5 button:hover,
+.dark-mode .question6 button:hover,
+.dark-mode .question7 button:hover {
+    background-color: #0056b3;
+}
+/* index5 y index6 */
+.question8, .question9, .question10, .question11 {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    background: #fff;
+    padding: 18px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.question8 button,
+.question9 button,
+.question10 button,
+.question11 button,
+.question8 p[id^="feedback9"],
+.question9 p[id^="feedback10"],
+.question10 p[id^="feedback11"],
+.question11 p[id^="feedback12"] {
+    align-self: center;
+}
+.dark-mode .question8,
+.dark-mode .question9,
+.dark-mode .question10,
+.dark-mode .question11 {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+.dark-mode .question8 p[id^="feedback9"],
+.dark-mode .question9 p[id^="feedback10"],
+.dark-mode .question10 p[id^="feedback11"],
+.dark-mode .question11 p[id^="feedback12"] {
+    color: #ffffff;
+}
+.dark-mode .question8 button,
+.dark-mode .question9 button,
+.dark-mode .question10 button,
+.dark-mode .question11 button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dark-mode .question8 button:hover,
+.dark-mode .question9 button:hover,
+.dark-mode .question10 button:hover,
+.dark-mode .question11 button:hover {
+    background-color: #0056b3;
+}
+.Dinosaurios {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1400px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.dark-mode .Dinosaurios {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+/* menu */
+.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 15px black;
+    border: 5px solid black;
+    
+
+}
+.Menu button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.dark-mode .Menu button {
+    background-color: #007bff;
+    color: white;
+}
+.dark-mode .Menu button:hover {
+    background-color: #0056b3;
+}
+.dark-mode .Menu {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px white;
+    border: groove 2px #eddf1c;
+    box-shadow: #eddf1c 0px 0px 5px;
+}
+.Hmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 15px black;
+    border: 5px solid black;
+    padding: 20px;
+}
+.dark-mode .Hmenu {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px white;
+    border: groove 2px #eddf1c;
+    box-shadow: #eddf1c 0px 0px 5px;
+}
+.MenuGrid{
+    display: grid;        
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; 
+}
+.dark-mode .headerMenu{
+    background-color: #121212;
 }
