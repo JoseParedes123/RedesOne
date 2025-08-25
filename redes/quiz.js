@@ -1,77 +1,85 @@
 const questions = [
     {
-        question: "¿Cuál es la capital del Imperio Bizantino?",
-        options: ["París", "Roma", "Constantinopla", "Londres", "Estambul"],
-        answer: "Constantinopla"
+        question: "¿Qué fue el ENIAC?",
+        options: ["Una computadora", "Un robot", "Un software", "Un lenguaje de programación", "Un videojuego"],
+        answer: "Una computadora"
     },
     {
-        question: "¿Qué imperio causó la caída de Constantinopla en 1453?",
-        options: ["Español", "Romano", "Otomano", "Britanico", "RomanoGermánico"],
-        answer: "Otomano"
+        question: "¿En que año se desarrollo el ENIAC?",
+        options: ["1943", "1945", "1946", "1950", "1952"],
+        answer: "1945"
     },
     {
-        question: "¿Qué emperador bizantino es conocido por su ambicioso programa de reformas y por la construcción de la iglesia de Santa Sofía?",
-        options: ["Justiniano", "Constantino", "Teodosio", "Heraclio", "Basilio"],
-        answer: "Justiniano"
+        question: "Que mujeres participaron en la programacion del ENIAC?",
+        options: ["Ada Lovelace", "Grace Hopper", "Kay McNulty y equipo", "Marie Curie", "Rosalind Franklin"],
+        answer: "Kay McNulty y equipo"
     },
     {
-        question: "¿Cuál era el idioma oficial del Imperio Bizantino?",
-        options: ["Latín", "Griego", "Turco", "Arabe", "Persa"],
-        answer: "Griego"
+        question: "Como se programaba el ENIAC?",
+        options: ["Con tarjetas perforadas", "Con cintas magnéticas", "Con interruptores y cables", "Con comandos de voz", "Con un teclado"],
+        answer: "Con interruptores y cables"
+    },
+//2 parte
+    {
+        question: "¿Cuál fue uno de los primeros dispositivos de cálculo usados por la humanidad?",
+        options: ["Abaco", "Calculadora", "Computadora", "Teléfono", "Televisor"],
+        answer: "Ábaco"
     },
     {
-        question: "Cual es la estrella más cercana a la Tierra?",
-        options: ["Proxima Centauri", "Sirius", "Betelgeuse", "UY Scuti", "Sol"],
-        answer: "Proxima Centauri"
+        question: "¿Cual se considera la primera computadora electronica de proposito general?",
+        options: ["UNIVAC", "ENIAC", "IBM 701", "Colossus", "Z3"],
+        answer: "ENIAC"
     },
     {
-        question: "¿Cómo se llama nuestra galaxia?",
-        options: ["Andrómeda", "Vía Láctea", "Triángulo", "Sombrero", "Magallanes"],
-        answer: "Vía Láctea"
+        question: "¿Qué invento permitió la miniaturización y mayor velocidad de las computadoras en la segunda generación?",
+        options: ["Transistores", "Circuitos integrados", "Microprocesadores", "Memoria RAM", "Discos duros"],
+        answer: "Transistores"
     },
     {
-        question: "¿Qué fenómeno ocurre cuando una estrella masiva explota al final de su vida?",
-        options: ["Supernova", "Eclipse", "Tránsito planetario", "Lluvia de meteoros", "Aurora Boreal"],
-        answer: "Supernova"
-    },
-    {
-        question: "¿Cuál es el nombre del agujero negro supermasivo en el centro de la Vía Láctea?",
-        options: ["Sagitario A", "Andromeda A","Cygnus X-1","Betelgeuse","Proxima Centauri"],
-        answer: "Sagitario A"
-    },
-    {
-        question: "¿A qué grupo pertenecen los dinosaurios carnívoros como el T. rex y Velociraptor?",
-        options: ["Ornitisquios", "Saurisquios", "Saurópodos", "Pterosaurios"],
-        answer: "Saurisquios"
-    },
-    {
-        question: "¿Cuál de estos dinosaurios era un herbívoro con placas óseas en la espalda?",
-        options: ["Velociraptor", "Stegosaurus", "Tyrannosaurus rex", "Argentinosaurus"],
-        answer: "Stegosaurus"
-    },
-    {
-        question: "¿Qué grupo de dinosaurios evolucionó en las aves actuales?",
-        options: ["Ornitisquios", "Saurisquios", "Saurópodos", "Pterosaurios"],
-        answer: "Saurisquios"
-    },
-    {
-        question: "¿Cuál es el dinosaurio más grande conocido hasta ahora?",
-        options: ["Tyrannosaurus rex", "Argentinosaurus", "Velociraptor", "Ankylosaurus"],
-        answer: "Argentinosaurus"
-    }
+        question: "¿Qué avance tecnológico permitió la creación de computadoras personales en los años 70?",
+        options: ["Microprocesadores", "Transistores", "Circuitos integrados", "Memoria RAM", "Discos duros"],
+        answer: "Microprocesador"
 
-    // ... más preguntas
+    },
+    {
+        question: "¿Cuál de los siguientes es un ejemplo de computación en la actualidad?",
+        options: ["Dispositivos moviles", "Mainframes", "Supercomputadoras", "Computación en la nube", "Tarjetas perforadas"],
+        answer : "Computación en la nube"
+    },
+    {
+//3ra parte
+    question: "¿Quien fue la primera programadora de la historia?",
+    options: ["Ada Lovelace", "Grace Hopper", "Alan Turing", "Bill Gates"],
+    answer: "Ada Lovelace"
+    },
+    {
+    question : "¿Cuál de estos lenguajes fue creado para facilitar el aprendizaje de la programación?",
+    options: ["Python", "Java", "C++", "Ruby"],
+    answer: "Python"
+    },
+    {
+    question: "¿Qué lenguaje es ampliamente usado en ciencia de datos e inteligencia artificial?",
+    options: ["Python", "Java", "PHP", "C"],
+    answer: "Python"
+    },
+    {
+    question: "¿Cuál de estos es un lenguaje de bajo nivel?",
+    options: ["Ensamblador", "JavaScript", "Ruby", "C#"],
+    answer: "Ensamblador"
+    }
+    
+
 ];
 
 let score = 0;
 
-function checkAnswer() {
+function checkAnswer1() {
     const selectedOption = document.querySelector('input[name="q1"]:checked');
     const feedbackElement = document.getElementById('feedback');
 
     if (selectedOption) {
-        if (selectedOption.value === "Constantinopla") { // Deberías hacerlo dinámico con el arreglo de preguntas
-            feedbackElement.textContent = "¡Correcto, es Constantinopla!";
+        if (selectedOption.value === questions[0].answer) { // Deberías hacerlo dinámico con el arreglo de preguntas
+            feedbackElement.textContent = "¡Correcto, la ENIAC fue la primera computadora!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -87,7 +95,7 @@ function checkAnswer2() {
 
     if (selectedOption) {
         if (selectedOption.value === questions[1].answer) {
-            feedbackElement.textContent = "¡Correcto, fue el Otomano!";
+            feedbackElement.textContent = "¡Correcto, en 1945!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -103,7 +111,7 @@ function checkAnswer3() {
 
     if (selectedOption) {
         if (selectedOption.value === questions[2].answer) {
-            feedbackElement.textContent = "¡Correcto, es Justiniano!";
+            feedbackElement.textContent = "¡Correcto, Kay McNulty y su equipo!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -119,7 +127,7 @@ function checkAnswer4() {
 
     if (selectedOption) {
         if (selectedOption.value === questions[3].answer) {
-            feedbackElement.textContent = "¡Correcto, es el Griego!";
+            feedbackElement.textContent = "¡Correcto, son los cables e interruptores!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -129,17 +137,17 @@ function checkAnswer4() {
         feedbackElement.textContent = "Por favor, selecciona una opción.";
     }
 }
-const btn = document.getElementById('toggle-dark');
-btn.onclick = () => {
-    document.body.classList.toggle('dark-mode');
-}
+
+
+//parte 2
+
 function checkAnswer5() {
     const selectedOption = document.querySelector('input[name="q5"]:checked');
     const feedbackElement = document.getElementById('feedback5');
 
     if (selectedOption) {
-        if (selectedOption.value === "Proxima Centauri") {
-            feedbackElement.textContent = "¡Correcto, es Proxima Centauri!";
+        if (selectedOption.value === questions[4].answer) {
+            feedbackElement.textContent = "¡Correcto, es el abaco!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -154,8 +162,8 @@ function checkAnswer6() {
     const feedbackElement = document.getElementById('feedback6');
 
     if (selectedOption) {
-        if (selectedOption.value === "Vía Láctea") {
-            feedbackElement.textContent = "¡Correcto, es la Vía Láctea!";
+        if (selectedOption.value === questions[5].answer) {
+            feedbackElement.textContent = "¡Correcto, es la ENIAC!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -170,8 +178,8 @@ function checkAnswer7() {
     const feedbackElement = document.getElementById('feedback7');
 
     if (selectedOption) {
-        if (selectedOption.value === "Supernova") {
-            feedbackElement.textContent = "¡Correcto, es una Supernova!";
+        if (selectedOption.value === questions[6].answer) {
+            feedbackElement.textContent = "¡Correcto, es el transistor!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -186,8 +194,8 @@ function checkAnswer8() {
     const feedbackElement = document.getElementById('feedback8');
 
     if (selectedOption) {
-        if (selectedOption.value === "Sagitario A") {
-            feedbackElement.textContent = "¡Correcto, es Sagitario A!";
+        if (selectedOption.value === questions[7].answer) {
+            feedbackElement.textContent = "¡Correcto, es el Microprocesador!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -202,8 +210,8 @@ function checkAnswer9() {
     const feedbackElement = document.getElementById('feedback9');
 
     if (selectedOption) {
-        if (selectedOption.value === "Saurisquios") {
-            feedbackElement.textContent = "¡Correcto, son los Saurisquios!";
+        if (selectedOption.value === questions[8].answer) {
+            feedbackElement.textContent = "¡Correcto, la Computación en la mube!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -218,8 +226,8 @@ function checkAnswer10() {
     const feedbackElement = document.getElementById('feedback10');
 
     if (selectedOption) {
-        if (selectedOption.value === "Stegosaurus") {
-            feedbackElement.textContent = "¡Correcto, es el Stegosaurus!";
+        if (selectedOption.value === questions[9].answer) {
+            feedbackElement.textContent = "¡Correcto, es Ada Lovelace!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -234,8 +242,8 @@ function checkAnswer11() {
     const feedbackElement = document.getElementById('feedback11');
 
     if (selectedOption) {
-        if (selectedOption.value === "Saurisquios") {
-            feedbackElement.textContent = "¡Correcto, son los Saurisquios!";
+        if (selectedOption.value === questions[10].answer) {
+            feedbackElement.textContent = "¡Correcto, es Python!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -250,8 +258,8 @@ function checkAnswer12() {
     const feedbackElement = document.getElementById('feedback12');
 
     if (selectedOption) {
-        if (selectedOption.value === "Argentinosaurus") {
-            feedbackElement.textContent = "¡Correcto, es el Argentinosaurus!";
+        if (selectedOption.value === questions[11].answer) {
+            feedbackElement.textContent = "¡Correcto, es Python!";
             score++;
         } else {
             feedbackElement.textContent = "Incorrecto. Vuelve a intentarlo.";
@@ -260,4 +268,42 @@ function checkAnswer12() {
     } else {
         feedbackElement.textContent = "Por favor, selecciona una opción.";
     }
+
 }
+
+// Al cargar la página, aplica el modo guardado
+ // ...existing code...
+
+// Modo oscuro global usando localStorage
+function setDarkMode(enabled) {
+    if (enabled) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+}
+
+// Al cargar la página, aplica el modo guardado
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+}
+
+// Botón para alternar el modo
+const btn = document.getElementById('toggle-dark');
+if (btn) {
+    btn.onclick = () => {
+        const enabled = !document.body.classList.contains('dark-mode');
+        setDarkMode(enabled);
+    }
+}
+
+// ...resto de tu código...
+    
+
+ 
+
+
+
+

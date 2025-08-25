@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.dark-mode body{
+body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
@@ -85,7 +85,16 @@ footer{
 .question button,
 .question1 button,
 .question2 button,
-.question3 button{
+.question3 button,
+.question4 button,
+.question5 button,
+.question6 button,
+.question7 button,
+.question8 button,
+.question9 button,
+.question10 button,
+.question11 button,
+.question12 button{
     align-self: center;
     background-color: #333;
     color: #fff;
@@ -127,10 +136,7 @@ header{
     background-color: #444;
     box-shadow: #eddf1c 0px 0px 5px;
 }
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
+
 .dark-mode .question,
 .dark-mode .question1,
 .dark-mode .question2,
@@ -198,7 +204,7 @@ li{
     list-style: none;
     margin: 10px 0;
 }
-.Astronomia{
+.Computacion{
     font-size: 1em;
     line-height: 1.2;
     color: #333;
@@ -213,7 +219,7 @@ li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-.dark-mode .Astronomia {
+.dark-mode .Computacion {
     background-color: #1e1e1e;
     color: #ffffff;
     border: #eddf1c 2px solid;
@@ -335,7 +341,7 @@ li{
 .dark-mode .question11 button:hover {
     background-color: #0056b3;
 }
-.Dinosaurios {
+.Lenguajes {
     font-size: 1em;
     line-height: 1.2;
     color: #333;
@@ -349,7 +355,7 @@ li{
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.dark-mode .Dinosaurios {
+.dark-mode .Lenguajes {
     background-color: #1e1e1e;
     color: #ffffff;
     border: #eddf1c 2px solid;
@@ -648,5 +654,11 @@ footer button{
     border-radius: 5px;
     box-shadow: #eddf1c 0px 0px 5px;
     margin: 10px;  
+}
+.question8 p[id^="feedback10"],
+.question9 p[id^="feedback11"],
+.question10 p[id^="feedback12"],
+.question11 p[id^="feedback13"]{
+    align-self: center;
 }
 /*ME QUEDE EN MEJORAR LOS ASPECTOS DE LAS PAGINAS*/

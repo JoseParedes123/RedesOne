@@ -1,90 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png" href="https://avatars.githubusercontent.com/u/6693385?s=280&v=4">
-    <title>Joseph_Redes</title>
+    <title>Quiz ENIAC e Historia de la Computación</title>
 </head>
 <body>
     <header class="quiz">
-        <h1>¡Empecemos con la practica!</h1>
+        <h1>¡Empecemos con la práctica!</h1>
         <button id="toggle-dark">Toggle Dark Mode</button>
     </header>
     <main>
         <div class="quiz1">
-            <h2>Quiz de Conocimientos sobre el Imperio Bizantino</h2>
+            <h2>Quiz sobre la ENIAC y la Historia de la Computación</h2>
             <div class="question">
-                <p>¿Como se llamaba la capital del Imperio Bizantino?</p>
-                <input type="radio" id="paris" name="q1" value="paris">
-                <label for="paris">París</label><br>
-                <input type="radio" id="roma" name="q1" value="roma">
-                <label for="roma">Roma</label><br>
-                <input type="radio" id="Constantinopla" name="q1" value="Constantinopla">
-                <label for="Constantinopla">Constantinopla</label><br>
-                <input type="radio" id="londres" name="q1" value="londres">
-                <label for="londres">Londres</label><br>
-                <input type="radio" id="estambul" name="q1" value="estambul">
-                <label for="estambul">Estambul</label><br>
-                <button onclick="checkAnswer()">Enviar Respuesta</button>
+                <p>¿Qué fue la ENIAC?</p>
+                <input type="radio" id="q1a" name="q1" value="Calculadora">
+                <label for="q1a">Una calculadora mecánica</label><br>
+                <input type="radio" id="q1b" name="q1" value="Una computadora">
+                <label for="q1b">La primera computadora electrónica de propósito general</label><br>
+                <input type="radio" id="q1c" name="q1" value="Videojuego">
+                <label for="q1c">Un videojuego antiguo</label><br>
+                <input type="radio" id="q1d" name="q1" value="Robot">
+                <label for="q1d">Un robot industrial</label><br>
+                <button onclick="checkAnswer1()">Enviar Respuesta</button>
                 <p id="feedback"></p>
-
             </div>
             <div class="question1">
-                <p>¿Cuál Imperio causo la caida de Constantinopla en 1453?</p>
-                <input type="radio" id="Español" name="q2" value="Español">
-                <label for="Español">Español</label><br>
-                <input type="radio" id="Romano" name="q2" value="Romano">
-                <label for="Romano">Romano</label><br>
-                <input type="radio" id="Otomano" name="q2" value="Otomano">
-                <label for="Otomano">Otomano</label><br>
-                <input type="radio" id="Britanico" name="q2" value="Britanico">
-                <label for="Britanico">Britanico</label><br>
-                <input type="radio" id="RomanoGermanico" name="q2" value="RomanoGermanico">
-                <label for="RomanoGermanico">Sacro Romano Germanico</label><br>
+                <p>¿En qué año se completó la ENIAC?</p>
+                <input type="radio" id="q2a" name="q2" value="1936">
+                <label for="q2a">1936</label><br>
+                <input type="radio" id="q2b" name="q2" value="1945">
+                <label for="q2b">1945</label><br>
+                <input type="radio" id="q2c" name="q2" value="1958">
+                <label for="q2c">1958</label><br>
+                <input type="radio" id="q2d" name="q2" value="1971">
+                <label for="q2d">1971</label><br>
                 <button onclick="checkAnswer2()">Enviar Respuesta</button>
                 <p id="feedback2"></p>
-            </div>        
+            </div>
             <div class="question2">
-                <p>¿Qué emperador bizantino es conocido por su ambicioso programa de reformas y por la construcción de la iglesia de Santa Sofía?</p>
-                <input type="radio" id="Justinian0" name="q3" value="Justiniano">
-                <label for="Justiniano">Justiniano</label><br>
-                <input type="radio" id="Constantino" name="q3" value="Constantino">
-                <label for="Constantino">Constantino</label><br>
-                <input type="radio" id="Teodosio" name="q3" value="Teodosio">
-                <label for="Teodosio">Teodosio</label><br>
-                <input type="radio" id="Heraclio" name="q3" value="Heraclio">
-                <label for="Heraclio">Heraclio</label><br>
-                <input type="radio" id="Basilio" name="q3" value="Basilio">
-                <label for="Basilio">Basilio</label><br>
+                <p>¿Qué mujeres fueron pioneras en la programación de la ENIAC?</p>
+                <input type="radio" id="q3a" name="q3" value="Kay McNulty y equipo">
+                <label for="q3a">Kay McNulty</label><br>
+                <input type="radio" id="q3b" name="q3" value="Ada Lovelace">
+                <label for="q3b">Ada Lovelace</label><br>
+                <input type="radio" id="q3c" name="q3" value="Grace Hopper">
+                <label for="q3c">Grace Hopper</label><br>
+                <input type="radio" id="q3d" name="q3" value="Ninguna">
+                <label for="q3d">Ninguna mujer participó</label><br>
                 <button onclick="checkAnswer3()">Enviar Respuesta</button>
                 <p id="feedback3"></p>
             </div>
             <div class="question3">
-                <p>¿Qué lengua se convirtió en la lengua oficial del Imperio Bizantino, reemplazando al latín?</p>
-                <input type="radio" id="Griego" name="q4" value="Griego">
-                <label for="Griego">Griego</label><br>
-                <input type="radio" id="Latín" name="q4" value="Latín">
-                <label for="Latín">Latín</label><br>
-                <input type="radio" id="Arabe" name="q4" value="Arabe">
-                <label for="Arabe">Árabe</label><br>
-                <input type="radio" id="Turco" name="q4" value="Turco">
-                <label for="Turco">Turco</label><br>
-                <input type="radio" id="Persa" name="q4" value="Persa">
-                <label for="Persa">Persa</label><br>
+                <p>¿Cómo se programaba la ENIAC?</p>
+                <input type="radio" id="q4a" name="q4" value="Con interruptores y cables">
+                <label for="q4a">Mediante cables y ajuste de interruptores</label><br>
+                <input type="radio" id="q4b" name="q4" value="Pantalla táctil">
+                <label for="q4b">Con una pantalla táctil</label><br>
+                <input type="radio" id="q4c" name="q4" value="Voz">
+                <label for="q4c">Por comandos de voz</label><br>
+                <input type="radio" id="q4d" name="q4" value="Ratón">
+                <label for="q4d">Con un ratón y teclado moderno</label><br>
                 <button onclick="checkAnswer4()">Enviar Respuesta</button>
                 <p id="feedback4"></p>
-
             </div>
         </div>
+    <script src="quiz.js"></script>
     </main>
     <footer class="quises">
         <div class="button-container">
-            <button onclick="location.href='index3.html'">Ir a a la siguiente historia</button>
+            <button onclick="location.href='index3.html'">Ir a la siguiente historia</button>
         </div>
     </footer>
-    <script src="quiz.js"></script>
-
 </body>
 </html>

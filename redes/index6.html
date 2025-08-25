@@ -3,78 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Extra de Dinosaurios</title>
+    <title>Quiz Lenguajes de Programación</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="quiz">
-        <h1>Quiz Extra de Dinosaurios</h1>
+        <h1>Quiz de Lenguajes de Programación</h1>
         <button id="toggle-dark">Modo Oscuro</button>
     </header>
     <main>
         <div class="quiz1">
             <div class="question8">
-                <p>¿A qué grupo pertenecen los dinosaurios carnívoros como el T. rex y Velociraptor?</p>
-                <input type="radio" id="ornitisquios" name="q9" value="Ornitisquios">
-                <label for="ornitisquios">Ornitisquios</label><br>
-                <input type="radio" id="saurisquios" name="q9" value="Saurisquios">
-                <label for="saurisquios">Saurisquios</label><br>
-                <input type="radio" id="sauropodos" name="q9" value="Saurópodos">
-                <label for="sauropodos">Saurópodos</label><br>
-                <input type="radio" id="pterosaurios" name="q9" value="Pterosaurios">
-                <label for="pterosaurios">Pterosaurios</label><br>
-                <button onclick="checkAnswer9()">Enviar Respuesta</button>
-                <p id="feedback9"></p>
-            </div>
-            <div class="question9">
-                <p>¿Cuál de estos dinosaurios era un herbívoro con placas óseas en la espalda?</p>
-                <input type="radio" id="velociraptor" name="q10" value="Velociraptor">
-                <label for="velociraptor">Velociraptor</label><br>
-                <input type="radio" id="stegosaurus" name="q10" value="Stegosaurus">
-                <label for="stegosaurus">Stegosaurus</label><br>
-                <input type="radio" id="tRex" name="q10" value="Tyrannosaurus rex">
-                <label for="tRex">Tyrannosaurus rex</label><br>
-                <input type="radio" id="argentino" name="q10" value="Argentinosaurus">
-                <label for="argentino">Argentinosaurus</label><br>
+                <p>¿Quién es considerada la primera programadora de la historia?</p>
+                <input type="radio" id="ada" name="q10" value="Ada Lovelace">
+                <label for="ada">Ada Lovelace</label><br>
+                <input type="radio" id="hopper" name="q10" value="Grace Hopper">
+                <label for="hopper">Grace Hopper</label><br>
+                <input type="radio" id="turing" name="q10" value="Alan Turing">
+                <label for="turing">Alan Turing</label><br>
+                <input type="radio" id="gates" name="q10" value="Bill Gates">
+                <label for="gates">Bill Gates</label><br>
                 <button onclick="checkAnswer10()">Enviar Respuesta</button>
                 <p id="feedback10"></p>
             </div>
-            <div class="question10">
-                <p>¿Qué grupo de dinosaurios evolucionó en las aves actuales?</p>
-                <input type="radio" id="ornitisquios2" name="q11" value="Ornitisquios">
-                <label for="ornitisquios2">Ornitisquios</label><br>
-                <input type="radio" id="saurisquios2" name="q11" value="Saurisquios">
-                <label for="saurisquios2">Saurisquios</label><br>
-                <input type="radio" id="sauropodos2" name="q11" value="Saurópodos">
-                <label for="sauropodos2">Saurópodos</label><br>
-                <input type="radio" id="pterosaurios2" name="q11" value="Pterosaurios">
-                <label for="pterosaurios2">Pterosaurios</label><br>
+            <div class="question9">
+                <p>¿Cuál de estos lenguajes fue creado para facilitar el aprendizaje de la programación?</p>
+                <input type="radio" id="fortran" name="q11" value="Fortran">
+                <label for="fortran">Fortran</label><br>
+                <input type="radio" id="basic" name="q11" value="BASIC">
+                <label for="basic">BASIC</label><br>
+                <input type="radio" id="c" name="q11" value="C">
+                <label for="c">C</label><br>
+                <input type="radio" id="python" name="q11" value="Python">
+                <label for="python">Python</label><br>
                 <button onclick="checkAnswer11()">Enviar Respuesta</button>
                 <p id="feedback11"></p>
             </div>
-            <div class="question11">
-                <p>¿Cuál es el dinosaurio más grande de estos 4?</p>
-                <input type="radio" id="tRex2" name="q12" value="Tyrannosaurus rex">
-                <label for="tRex2">Tyrannosaurus rex</label><br>
-                <input type="radio" id="argentino2" name="q12" value="Argentinosaurus">
-                <label for="argentino2">Argentinosaurus</label><br>
-                <input type="radio" id="velociraptor3" name="q12" value="Velociraptor">
-                <label for="velociraptor3">Velociraptor</label><br>
-                <input type="radio" id="ankylosaurus2" name="q12" value="Ankylosaurus">
-                <label for="ankylosaurus2">Ankylosaurus</label><br>
+            <div class="question10">
+                <p>¿Qué lenguaje es ampliamente usado en ciencia de datos e inteligencia artificial?</p>
+                <input type="radio" id="java" name="q12" value="Java">
+                <label for="java">Java</label><br>
+                <input type="radio" id="c2" name="q12" value="C">
+                <label for="c2">C</label><br>
+                <input type="radio" id="python2" name="q12" value="Python">
+                <label for="python2">Python</label><br>
+                <input type="radio" id="php" name="q12" value="PHP">
+                <label for="php">PHP</label><br>
                 <button onclick="checkAnswer12()">Enviar Respuesta</button>
                 <p id="feedback12"></p>
             </div>
+            <div class="question11">
+                <p>¿Cuál de estos es un lenguaje de bajo nivel?</p>
+                <input type="radio" id="ensamblador" name="q13" value="Ensamblador">
+                <label for="ensamblador">Ensamblador</label><br>
+                <input type="radio" id="javascript" name="q13" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                <input type="radio" id="ruby" name="q13" value="Ruby">
+                <label for="ruby">Ruby</label><br>
+                <input type="radio" id="csharp" name="q13" value="C#">
+                <label for="csharp">C#</label><br>
+                <button onclick="checkAnswer13()">Enviar Respuesta</button>
+                <p id="feedback13"></p>
+            </div>
         </div>
+    <script src="quiz.js"></script>
     </main>
-
     <footer class="quises">
         <div class="button-container">
-        <button onclick="location.href='../pruebainding/index0.html'">Ir al Menu</button>
-        
+            <button onclick="location.href='../pruebainding/index0.html'">Ir al Menú</button>
         </div>
     </footer>
-
-    <script src="quiz.js"></script>
 </body>
 </html>
