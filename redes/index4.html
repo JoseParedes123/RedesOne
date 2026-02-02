@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="https://cdn-icons-png.flaticon.com/512/616/616554.png">
+    <title>Quiz Historia de la Computación</title>
+</head>
+<body>
+    <header class="quiz">
+        <h1>¡Empecemos con la práctica de Historia de la Computación!</h1>
+        <button id="toggle-dark">Modo Oscuro</button>
+    </header>
+    <main>
+        <div class="quiz1">
+            <h2>Quiz de Conocimientos sobre la Historia de la Computación</h2>
+            <div class="question4">
+                <p>¿Cuál fue uno de los primeros dispositivos de cálculo usados por la humanidad?</p>
+                <input type="radio" id="abaco" name="q5" value="Ábaco">
+                <label for="abaco">Ábaco</label><br>
+                <input type="radio" id="microprocesador" name="q5" value="Microprocesador">
+                <label for="microprocesador">Microprocesador</label><br>
+                <input type="radio" id="internet" name="q5" value="Internet">
+                <label for="internet">Internet</label><br>
+                <input type="radio" id="transistor" name="q5" value="Transistor">
+                <label for="transistor">Transistor</label><br>
+                <button onclick="checkAnswer5()">Enviar Respuesta</button>
+                <p id="feedback5"></p>
+            </div>
+            <div class="question5">
+                <p>¿Qué computadora es considerada la primera computadora electrónica de propósito general?</p>
+                <input type="radio" id="eniac" name="q6" value="ENIAC">
+                <label for="eniac">ENIAC</label><br>
+                <input type="radio" id="z3" name="q6" value="Z3">
+                <label for="z3">Z3</label><br>
+                <input type="radio" id="abaco2" name="q6" value="Ábaco">
+                <label for="abaco2">Ábaco</label><br>
+                <input type="radio" id="pc" name="q6" value="PC">
+                <label for="pc">PC</label><br>
+                <button onclick="checkAnswer6()">Enviar Respuesta</button>
+                <p id="feedback6"></p>
+            </div>        
+            <div class="question6">
+                <p>¿Qué invento permitió la miniaturización y mayor velocidad de las computadoras en la segunda generación?</p>
+                <input type="radio" id="transistor2" name="q7" value="Transistores">
+                <label for="transistor2">Transistor</label><br>
+                <input type="radio" id="tubo" name="q7" value="Tubo de vacío">
+                <label for="tubo">Tubo de vacío</label><br>
+                <input type="radio" id="abaco3" name="q7" value="Ábaco">
+                <label for="abaco3">Ábaco</label><br>
+                <input type="radio" id="regla" name="q7" value="Regla de cálculo">
+                <label for="regla">Regla de cálculo</label><br>
+                <button onclick="checkAnswer7()">Enviar Respuesta</button>
+                <p id="feedback7"></p>
+            </div>
+            <div class="question7">
+                <p>¿Qué avance tecnológico permitió la creación de computadoras personales en los años 70?</p>
+                <input type="radio" id="microprocesador2" name="q8" value="Microprocesador">
+                <label for="microprocesador2">Microprocesador</label><br>
+                <input type="radio" id="internet2" name="q8" value="Internet">
+                <label for="internet2">Internet</label><br>
+                <input type="radio" id="abaco4" name="q8" value="Ábaco">
+                <label for="abaco4">Ábaco</label><br>
+                <input type="radio" id="transistor3" name="q8" value="Transistor">
+                <label for="transistor3">Transistor</label><br>
+                <button onclick="checkAnswer8()">Enviar Respuesta</button>
+                <p id="feedback8"></p>
+            </div>
+            <div class="question8">
+                <p>¿Cuál de los siguientes es un ejemplo de computación en la actualidad?</p>
+                <input type="radio" id="moviles" name="q9" value="Computación en la nube">
+                <label for="moviles">Computacion en la nube</label><br>
+                <input type="radio" id="abaco5" name="q9" value="Ábaco">
+                <label for="abaco5">Ábaco</label><br>
+                <input type="radio" id="regla2" name="q9" value="Regla de cálculo">
+                <label for="regla2">Regla de cálculo</label><br>
+                <input type="radio" id="tubo2" name="q9" value="Tubo de vacío">
+                <label for="tubo2">Tubo de vacío</label><br>
+                <button onclick="checkAnswer9()">Enviar Respuesta</button>
+                <p id="feedback9"></p>
+            </div>
+        </div>
+    <script src="quiz.js"></script>
+    </main>
+    <footer class="quises">
+        <div class="button-container">
+            <button onclick="location.href='index5.html'">Siguiente historia</button>
+        </div>
+    </footer>
+</body>
+</html>

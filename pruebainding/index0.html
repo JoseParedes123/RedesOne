@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../redes/style.css">
+</head>
+<body>
+
+    <header class="headerMenu">
+        <section class="Hmenu">
+        <h1>Github Experimentos</h1>
+        <button id="toggle-dark">Modo Oscuro</button>
+        </section>
+    </header>
+    <main>
+        <div class="MenuGrid">
+            <div class="Menu">
+                <h2>Historias y sus Quiz</h2>
+                <button onclick="location.href='../redes/index1.html'">Ir a la historia</button>
+            </div>
+
+            <div class="Menu">
+                <h2>Galeria autor</h2>
+                <button onclick="location.href='../tarea6/jose_paredes-_galeria.html'">Ir a la galeria</button>
+            </div>
+
+            <div class="Menu">
+                <h2>Sobre el autor</h2>
+                <button onclick="location.href='../MistioWeb/indexautor.html'">Ir a la información</button>
+            </div>
+            <div class="Menu">
+                <h2>Conocimiento Informatico</h2>
+                <button onclick="location.href='../lore/Menu.html'">Ir a C.Informatico</button>
+            </div>
+            <div class="Menu">
+                <h2>Ingrese</h2>
+                <button onclick="location.href='../basededatos/menuphp.html'">Ir a ingresar</button>
+            </div>
+            <div class="Menu">
+                <h2>Proximamente</h2>
+                <button>Proximamente</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        const toggleDarkButton = document.getElementById('toggle-dark');
+        toggleDarkButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
